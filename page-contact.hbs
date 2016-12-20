@@ -1,0 +1,37 @@
+{{!< default}}
+
+{{!-- This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. --}}
+
+<header class="custom-header">
+    <div class="container">
+        <nav class="navbar">
+            <!-- a class="nav-logo" href="{{@blog.url}}">
+                <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
+            </a -->
+            <div class="nav-text-logo">
+                [hi@<a href="{{@blog.url}}">longgeek.com</a>]$ sudo su -
+            </div>
+            {{#if @blog.navigation}}
+                {{navigation}}
+            {{/if}}
+            </ul>
+            <a class="nav-collapse icon-menu"></a>
+        </nav>
+        <div class="navbar-collapse">
+            <div class="divider2"></div>
+            {{#if @blog.navigation}}
+                {{navigation}}
+            {{/if}}
+            <div class="divider3"></div>
+        </div>
+    </div>
+</header>
+
+<section class="hand-section">
+    <div class="container">
+        <div class="hand-container">
+            <img src="/assets/hand.png">
+        </div>
+    </div>
+</section>
