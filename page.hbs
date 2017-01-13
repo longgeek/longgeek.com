@@ -9,9 +9,12 @@
 <header class="custom-header">
     <div class="container">
         <nav class="navbar">
-            <a class="nav-logo" href="{{@blog.url}}">
+            <!-- a class="nav-logo" href="{{@blog.url}}">
                 <img src="{{@blog.logo}}" alt="{{@blog.title}}" />
-            </a>
+            </a -->
+            <div class="nav-text-logo">
+                [hi@<a href="{{@blog.url}}">longgeek.com</a>]$ sudo su -
+            </div>
             {{#if @blog.navigation}}
                 {{navigation}}
             {{/if}}
